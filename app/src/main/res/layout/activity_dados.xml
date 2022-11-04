@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_dados2"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margen_horizontal"
+    android:paddingTop="@dimen/margen_vertical"
+    android:paddingRight="@dimen/margen_horizontal"
+    android:paddingBottom="@dimen/margen_vertical"
+    tools:context=".DadosActivity">
+
+    <TextView
+        android:id="@+id/puntotextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margen"
+        android:gravity="end"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <ImageView
+        android:id="@+id/dado1imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:paddingBottom="@dimen/margen"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/cara6" />
+
+    <ImageView
+        android:id="@+id/dado2imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:paddingBottom="@dimen/margen"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/cara2" />
+
+    <Button
+        android:id="@+id/lanzarbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lanzar" />
+
+    <TextView
+        android:id="@+id/resultadotextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+</LinearLayout>
